@@ -1,0 +1,478 @@
+* {
+    font-family: "Comfortaa", sans-serif;
+}
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: navy
+}
+
+body {
+    background: rgb(203, 235, 236);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+Header
+*/
+header {
+    background: rgb(161, 207, 207);
+    height: 85px;
+}
+
+header * {
+    color: navy;
+}
+
+header h1 {
+    margin-top: 15px;
+}
+
+header ul {
+    margin: 20px;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+
+header ul li {
+    position: relative;
+    display: inline-block;
+}
+
+header ul li a {
+    display: block;
+
+    text-decoration: none;
+    padding: 7px;
+}
+
+header ul li a:hover {
+    background: rgb(252, 248, 248);
+    transition: 0.5s;
+    color: #fff;
+}
+
+header ul li ul {
+    display: none;
+    margin: 0;
+    position: absolute;
+    background-color: rgb(161, 207, 207);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+
+}
+
+header ul li:hover ul {
+    display: inherit;
+}
+
+header ul li ul li {
+    width: 100%;
+
+}
+
+header ul li ul li a {
+    padding: 10px;
+    background: rgb(161, 207, 207);
+    color: navy;
+}
+
+/* Кнопка выпадающего списка */
+.dropbtn {
+    background-color: rgb(161, 207, 207);
+    color: navy;
+    padding: 7px;
+    font-size: 16px;
+    border: none;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(161, 207, 207);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: navy;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+    background-color: rgb(252, 248, 248);
+}
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+.dropdown:hover .dropbtn {
+    background-color: rgb(252, 248, 248);
+}
+
+/*
+Carousel
+*/
+.slider-title {
+    text-align: center;
+    padding: 20px 0;
+    color: navy;
+}
+
+.carousel {
+    height: 300px;
+}
+
+.carousel-inner,
+.carousel-item {
+    height: 300px;
+    border-radius: 4px;
+}
+
+.carousel-caption-hack {
+    position: absolute;
+    right: 0%;
+    bottom: 0.05rem;
+    left: 0%;
+    background-color: rgb(161, 207, 207);
+    opacity: 0.8;
+    padding-top: 1.25rem;
+    padding-bottom: 0rem;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.carousel-caption-hack a {
+    color: navy;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+/* catalog*/
+
+.main-content {
+    width: 70em;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 230px;
+
+
+}
+
+.card {
+
+    height: 50vh;
+    padding: 1%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(161, 207, 207);
+    border: 1px solid #000000;
+
+}
+
+/*блок новостей*/
+
+.news-content h2 {
+    margin: 30px 0;
+
+}
+
+.news-content .post {
+    margin-bottom: 20px;
+}
+
+.news-content .post_text {
+    background: rgb(161, 207, 207);
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.news-content .post_text h3 a:hover {
+    text-decoration: underline;
+    color: navy;
+}
+
+/*footer*/
+.footer {
+    background: rgb(80, 166, 172);
+    color: navy;
+    position: relative;
+}
+
+.footer .section {
+    padding: 22px;
+}
+
+.footer h4,
+.footer h3 {
+    color: #fff;
+}
+
+.footer .about .contact span {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer .about .socials a {
+    border: 1px solid rgb(125, 125, 235);
+    width: 35px;
+    height: 31px;
+    padding-top: 2.5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all .3s;
+    color: navy;
+}
+
+.footer .about .socials a:hover {
+    border: 1px solid white;
+    color: white;
+    transition: all .3s;
+}
+
+.section .link ul a {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.2em;
+    transition: all .3s;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link ul a:hover {
+    color: white;
+    margin-left: 15px;
+    transition: all .3s;
+}
+
+.footer .contact-form .contact-input {
+    background: #46adcc;
+    color: #000000;
+    margin-bottom: 5px;
+    line-height: 30px;
+    padding: .9rem 1.4rem;
+    border: none;
+    width: 100%;
+}
+
+.footer .contact-form .contact-input:focus {
+    background: #dce1e7;
+}
+
+.footer .contact-form .contact-btn {
+    float: left;
+    font-size: 15px;
+}
+
+/*
+FORMS
+ */
+.reg_form h2 {
+    text-align: center;
+    margin: 15px 0;
+    color: white;
+    background-color: #46adcc;
+}
+
+.reg_form a {
+    font-size: 1.2em;
+    transition: all .3s;
+    color: #5c5b5b;
+    text-decoration: underline;
+    margin-left: 60px;
+}
+
+.reg_form a:hover {
+    margin-left: 55px;
+    transition: all .3s;
+}
+
+form div.err p {
+    color: red;
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    margin: 1rem 0;
+    background: #6790eb;
+    min-height: 600px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: navy;
+}
+
+.sidebar ul a {
+    padding: 18px;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+
+.sidebar ul a:hover {
+    padding-left: 10px;
+    transition: all 0.3s;
+    color: #d3d3d3;
+    text-decoration: none;
+}
+
+.catalog {
+    overflow-y: scroll;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-content1 {
+    width: 30%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.main-content2 {
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card2 {
+
+    height: 65vh;
+    width: 70%;
+    margin: 10px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(161, 207, 207);
+    border: 1px solid #000000;
+
+}
+
+.card1 {
+
+    height: 65vh;
+    width: 70%;
+    margin: 10px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(161, 207, 207);
+    border: 1px solid #000000;
+
+}
+
+.card-body1 {
+    margin: 8px;
+    padding: 5px;
+}
+
+.card-body1 a {
+    margin-top: 10px;
+
+}
+
+.table {
+    width: 85%;
+    margin-top: 30px;
+    margin-left: 50px;
+    border-bottom: #F0F0F0 1px solid;
+    padding: 10px;
+}
+
+.message_box {
+    margin: 10px 0px;
+    padding: 10px;
+    border: 1px solid navy;
+    text-align: center;
+    font-weight: bold;
+    color: navy;
+}
+
+.cart_div {
+    width: 85%;
+    margin-left: 50px;
+    font-weight: bold;
+    position: relative;
+}
+
+.cart_div a {
+    color: #000;
+}
+
+.cart_div span {
+    font-size: 12px;
+    line-height: 9px;
+    background: #F68B1E;
+    padding: 6px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -1px;
+    left: 13px;
+    color: #fff;
+    width: 14px;
+    height: 13px;
+    text-align: center;
+}
+
+.cart .remove {
+    background: none;
+    border: none;
+    color: #0067ab;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.cart .remove:hover {
+    text-decoration: underline;
+}
